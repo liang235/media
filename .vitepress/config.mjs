@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
-import sidebar from './sidebar.mjs' // 侧边栏
-import nav from './navbar.mjs' // 头部导航
+// import sidebar from './sidebar.mjs' // 侧边栏
+// import nav from './navbar.mjs' // 头部导航
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,10 +18,10 @@ export default defineConfig({
 
   themeConfig: {
     // 多个侧边栏，根据页面路径显示不同的侧边栏
-    sidebar,
+    // sidebar,
 
     // 头部导航, https://vitepress.dev/reference/default-theme-config
-    nav,
+    // nav,
 
     // 可用于自定义出现在上一个和下一个链接上方的文本
     docFooter: {
