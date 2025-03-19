@@ -7,7 +7,7 @@ export default defineConfig({
   title: "自媒体学习",
   description: "自媒体学习",
   lang: 'zh-cn', // 语言
-  base: './',
+  base: '/media/',
   head: [
     ['link', { rel: 'icon', href: '/learn-docs/vitepress-logo-mini.svg' }],
     ['meta', { 'http-equiv': 'Expires', 'content': '0' }],
