@@ -1,0 +1,18 @@
+/* 侧边栏 */
+@media (min-width: 1440px) {
+    #VPContent.VPContent.has-sidebar {
+        padding-right: 0;
+    }
+}
+
+#app .VPDoc.has-aside div.content-container {
+    max-width: initial;
+}
+
+#app .VPDoc.has-aside .content-container {
+    max-width: 800px;
+}
+
+.container .aside-container {
+    width: 300px;
+}

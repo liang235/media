@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
-// import sidebar from './sidebar.mjs' // 侧边栏
-// import nav from './navbar.mjs' // 头部导航
+import sidebar from './sidebar.mjs' // 侧边栏
+import nav from './navbar.mjs' // 头部导航
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,7 +9,7 @@ export default defineConfig({
   lang: 'zh-cn', // 语言
   base: '/media/',
   head: [
-    ['link', { rel: 'icon', href: '/learn-docs/vitepress-logo-mini.svg' }],
+    ['link', { rel: 'icon', href: '/media/vitepress-logo-mini.svg' }],
     ['meta', { 'http-equiv': 'Expires', 'content': '0' }],
     ['meta', { 'http-equiv': 'Pragma', 'content': 'no-cache' }],
     ['meta', { 'http-equiv': 'Cache-control', 'content': 'no-cache' }],
@@ -17,11 +17,13 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
+
     // 多个侧边栏，根据页面路径显示不同的侧边栏
-    // sidebar,
+    sidebar,
 
     // 头部导航, https://vitepress.dev/reference/default-theme-config
-    // nav,
+    nav,
 
     // 可用于自定义出现在上一个和下一个链接上方的文本
     docFooter: {
